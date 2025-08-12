@@ -1,1 +1,63 @@
-fastapi[all]
+# Core FastAPI and web framework dependencies
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Pydantic for data validation
+pydantic
+
+# Environment and configuration
+python-dotenv
+
+# HTTP client for external API calls
+aiohttp
+
+# LangChain and LangGraph dependencies (Python 3.13.2 compatible)
+langchain
+langchain-core
+langchain-openai
+langchain-google-genai
+langgraph
+
+# Additional LangChain utilities
+langchain-community
+langsmith
+
+# OpenAI SDK (latest compatible version)
+openai
+
+# Google AI SDK
+google-generativeai
+
+# Typing extensions for enhanced type hints
+typing-extensions
+
+# JSON handling and utilities
+orjson
+
+# Async utilities
+anyio
+
+# Date and time utilities
+python-dateutil
+
+# Logging and monitoring
+structlog
+
+# Data processing utilities
+numpy
+pandas
+
+# Optional: For enhanced error handling and validation
+tenacity
+
+# CORS middleware (included in FastAPI but explicit for clarity)
+starlette
+
+# Development dependencies (optional)
+pytest
+pytest-asyncio
+black
+flake8
+mypy
+streamlit
