@@ -660,7 +660,7 @@ st.markdown("""
                        background: linear-gradient(45deg, #ffffff, #e3f2fd);
                        -webkit-background-clip: text;
                        -webkit-text-fill-color: transparent;">
-                🎯 Careerium
+                🎯 Careerzora
             </h1>
             <p style="color: rgba(255,255,255,0.95); font-size: 1.3rem; margin: 1rem 0 0 0; font-weight: 300;">
                 Premium AI Career Intelligence • Professional Development • Strategic Growth
@@ -691,7 +691,7 @@ def call_api(endpoint: str, payload: Dict[str, Any]) -> Dict[str, Any] | None:
     url = f"{FASTAPI_URL}/{endpoint}"
     try:
         # Show a spinner while waiting for the response
-        with st.spinner(f"🔮 Careerium AI is crafting your {endpoint.replace('_', ' ')}... Please wait."):
+        with st.spinner(f"🔮 Careerzora  is crafting your {endpoint.replace('_', ' ')}... Please wait."):
             response = requests.post(url, json=payload, timeout=300)
         
         # Check if the response was successful
@@ -700,7 +700,7 @@ def call_api(endpoint: str, payload: Dict[str, Any]) -> Dict[str, Any] | None:
         return response.json()
     except requests.exceptions.RequestException as e:
         st.error(f"**🚨 Connection Error:** {e}")
-        st.info("💡 Please ensure the Careerium AI backend is running at 'https://cts-vibeappwe21012-4.azurewebsites.net'.")
+        st.info("💡 Please ensure the Careerzora backend is running at 'https://cts-vibeappwe21012-4.azurewebsites.net'.")
         return None
 
 def parse_comma_separated_input(input_str: str) -> List[str]:
@@ -713,7 +713,7 @@ def parse_comma_separated_input(input_str: str) -> List[str]:
 
 # Set page config
 st.set_page_config(
-    page_title="Careerium - Premium AI Career Intelligence", 
+    page_title="Careerzora - Premium AI Career Intelligence", 
     layout="wide",
     page_icon="🎯",
     initial_sidebar_state="expanded"
@@ -1059,7 +1059,7 @@ st.markdown("""
 <div style="text-align: center; padding: 3rem 0; 
             background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); 
             border-radius: 20px; margin-top: 3rem; backdrop-filter: blur(10px);">
-    <h3 style="color: #4facfe; margin-bottom: 1rem;">🎯 Careerium</h3>
+    <h3 style="color: #4facfe; margin-bottom: 1rem;">🎯 Careerzora</h3>
     <p style="color: #b3b3b3; margin: 0.5rem 0; font-size: 1rem;">
         Empowering careers through premium AI-driven insights and strategic development solutions
     </p>
